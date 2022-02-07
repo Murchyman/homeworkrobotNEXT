@@ -1,0 +1,7 @@
+add a static generator for cheaper bill
+
+add sidebar to generator so user can have more options
+
+add advertising
+
+add video advertising
