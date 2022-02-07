@@ -21,7 +21,10 @@
   margin-left: 1em;  
 }
   
-  
+.linkItem:hover{
+    
+  color: #FF9F1C;
+} 
   @media screen and (max-width: 600px) {
 
   }

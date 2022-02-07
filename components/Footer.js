@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from '../styles/Footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -6,23 +7,24 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 library.add(fab, fas)
 
 const Footer = () => {
+    const year = new Date().getFullYear();
     return (
         <div className={styles.container}>
             <div className={styles.Footer}>
 
                 <div className={styles.FooterLeft}>
-                    <p>Neo.  &copy;{new Date().getFullYear()}</p>
-                    <p>Terms</p>
-                    <p>Privacy</p>
+                    <div className={styles.linkItem}><Link href='/'>Neo.  &copy; </Link>{year}</div>
+                    <div className={styles.linkItem}><Link href='/'>Terms</Link></div>
+                    <div className={styles.linkItem}><Link href='/'>Privacy</Link></div>
                 </div>
                 <div className={styles.FooterRight}>
 
-                    <FontAwesomeIcon icon={["fab", "twitter"]} />
-                    <FontAwesomeIcon icon={["fab", "facebook"]} />
-                    <FontAwesomeIcon icon={["fab", "github"]} />
-                    <FontAwesomeIcon icon={["fab", "linkedin"]} />
+                    <div className={styles.linkItem}><Link href='/'><FontAwesomeIcon icon={["fab", "twitter"]} /></Link></div>
+                    <div className={styles.linkItem}><Link href='/'><FontAwesomeIcon icon={["fab", "facebook"]} /></Link></div>
+                    <div className={styles.linkItem}><Link href='/'><FontAwesomeIcon icon={["fab", "github"]} /></Link></div>
+                    <div className={styles.linkItem}><Link href='/'><FontAwesomeIcon icon={["fab", "linkedin"]} /></Link></div>
+                    <div className={styles.linkItem}><Link href='/'><FontAwesomeIcon icon="envelope" /></Link></div>
 
-                    <FontAwesomeIcon icon="envelope" />
 
 
                 </div>

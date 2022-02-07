@@ -1,7 +1,11 @@
 add a static generator for cheaper bill
 
-add sidebar to generator so user can have more options
+refactorm genorator page to be in a form
+
+make home page look simmilar to remixjs home page
 
 add advertising
 
 add video advertising
+
+fix favicon
