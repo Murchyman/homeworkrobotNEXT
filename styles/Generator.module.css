@@ -1,0 +1,57 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.inputField{
+    margin: 2em;
+    width: 60%;
+    height: 10em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2%;
+    font-size: 16px;
+    resize: none;
+}
+
+.wordCount{
+    border: black solid 1px;
+    
+    text-align: center;
+}
+.InputContainer{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+
+}
+
+.Answer{
+    margin: 2em;
+    width: 60%;
+    min-height: 10em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2%;
+    font-size: 16px;
+    resize: none;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    .inputField{
+        width: 95%;
+    }
+    .Answer{
+        width: 95%;
+    }
+
+    .wordCount{
+        align-items: center;
+    }
+}

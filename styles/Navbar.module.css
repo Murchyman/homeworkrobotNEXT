@@ -1,0 +1,27 @@
+.NavBar{
+  background-color: #0C0f0A;
+  color: white;
+  min-height: 3em;
+  align-items: center;
+  padding: 1em;
+  display: flex;
+  font-size: x-large;
+  flex-direction: row;
+  
+}
+
+.NavBarLinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.linkItem{
+  margin-left: 1em;  
+}
+  
+  
+  @media screen and (max-width: 600px) {
+
+  }

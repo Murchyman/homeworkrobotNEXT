@@ -1,0 +1,41 @@
+
+.Footer{
+    background-color: #0C0f0A;; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 100%;
+    width: 100%;
+    
+}
+.FooterLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.FooterRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+    font-size: x-large;
+}
+
+/* mobile media query */
+@media screen and (max-width: 600px) {
+.Footer{
+    flex-direction: column-reverse;
+    padding: 2%;
+    
+}
+.FooterLeft{
+    width: 50%;
+    justify-content: space-evenly;
+}
+}
