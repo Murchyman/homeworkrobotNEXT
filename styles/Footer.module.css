@@ -1,6 +1,6 @@
 
 .Footer{
-    background-color: #0C0f0A;; 
+    background-color: #333745;; 
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -33,7 +33,7 @@
 }
 
 .linkItem:hover{
-    color: #FFC300; 
+    color: #FE5F55; 
     cursor: pointer;
 }
 

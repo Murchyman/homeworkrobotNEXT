@@ -1,5 +1,5 @@
 .NavBar{
-  background-color: #0C0f0A;
+  background-color: #333745;
   color: white;
   min-height: 3em;
   align-items: center;
@@ -23,7 +23,7 @@
   
 .linkItem:hover{
     
-  color: #FF9F1C;
+  color: #FE5F55;
 } 
   @media screen and (max-width: 600px) {
 
