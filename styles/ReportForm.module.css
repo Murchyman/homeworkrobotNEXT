@@ -1,0 +1,63 @@
+.formGroup{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    
+    
+}
+
+.InputContainer{
+    margin-bottom: 1em;
+}
+
+.Left{
+    display: flex;
+    flex-direction: column;
+    /* change this for mobile */
+    width: 40%;
+    margin: 2em;
+}
+
+.Right{
+    display: flex;
+    flex-direction: column;
+    /* change this for mobile */
+    width: 40%;
+    margin: 2em;
+    
+}
+
+.inputField{
+    
+    border: 1px solid rgb(0, 0, 0);
+    height: 5em;
+    resize: none;
+    justify-content: flex-start;
+}
+
+.inputField:focus{
+    outline: none;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    .formGroup{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Left{
+
+        width: 80%;
+        
+    }
+    
+    .Right{
+
+        width: 80%;
+        
+        
+    }
+}

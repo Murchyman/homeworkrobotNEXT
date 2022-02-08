@@ -1,12 +1,35 @@
 import '../styles/globals.css'
+import Head from 'next/head'
 import Layout from '../components/Layout'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 config.autoAddCss = false
+
+
+
 function MyApp({ Component, pageProps }) {
-  return <Layout>
-    <Component {...pageProps} />
-  </Layout>
+  return (
+    <>
+
+      <Head>
+        <title>HomeWork Robot</title>
+        <meta name="description" content="With HomeWork Robot, get instant answers to questions or writing prompts" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6052671390695750"
+          crossOrigin="anonymous"></script>
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+      </Head>
+
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+
+    </>
+  )
 
 }
 
