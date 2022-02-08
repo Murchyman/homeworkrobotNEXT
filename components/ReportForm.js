@@ -77,10 +77,6 @@ const ReportForm = () => {
 
                     </div>
 
-
-
-
-
                     {/* number input taking max word count and desired wordcount */}
                     <div className={styles.InputContainer}>
 
