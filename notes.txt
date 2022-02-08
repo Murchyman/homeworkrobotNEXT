@@ -1,8 +1,6 @@
 add a static generator for cheaper bill
 
-refactorm genorator page to be in a form
-
-make home page look simmilar to remixjs home page
+refactor home page look simmilar to remixjs home page
 
 add advertising
 
@@ -10,4 +8,8 @@ add video advertising
 
 fix favicon
 
-add materialm design to site
+add material design to site
+
+add about page
+
+fix theme 

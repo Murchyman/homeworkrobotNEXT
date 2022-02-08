@@ -26,7 +26,7 @@ const ReportForm = () => {
         SendQuery(JSON.stringify(data));
     };
 
-    const [answer, setAnswer] = useState('');
+    const [answer, setAnswer] = useState('....');
     // Gain some more IQ to make this better, use the proper react form hook way
     const [radio, setRadio] = useState('');
     const SendQuery = async (FormData) => {

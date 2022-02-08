@@ -18,10 +18,6 @@ export default function Home() {
 
 
 
-          {/* demo gif */}
-          <div className={styles.Gif}><Image src={require('../public/demo.gif')} alt="gif" />
-          </div>
-
         </div>
 
       </>
