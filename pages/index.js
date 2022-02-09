@@ -2,6 +2,7 @@ import Button from '@mui/material/Button';
 import Image from 'next/image'
 import example from '../assets/example.png'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link';
 export default function Home() {
   const handleOnClick = () => {
     console.log('clicked')
@@ -21,8 +22,8 @@ export default function Home() {
           <span className={styles.paragraph}>Homework Robot is an Ai driven study assistant that lets you focus on the important stuff while our artificial intelligence delivers you high quality notes and reports. Best of all Homework Robot is 100% free to use!
           </span>
           <div className={styles.buttonContainer}>
-            <Button style={{ minWidth: '18em', minHeight: '4em' }} variant="contained">Get Started</Button>
-            <Button style={{ minWidth: '18em', minHeight: '4em' }} variant="contained">Learn More</Button>
+            <Button style={{ minWidth: '18em', minHeight: '4em' }} variant="contained"><Link href='/Generator'>Get Started</Link></Button>
+            <Button style={{ minWidth: '18em', minHeight: '4em' }} variant="contained"><Link href='/About'>Learn More</Link></Button>
           </div>
 
         </div>

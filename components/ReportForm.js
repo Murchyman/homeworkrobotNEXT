@@ -60,7 +60,7 @@ const ReportForm = () => {
 
             <div className={styles.formGroup}>
                 <div className={styles.Left}>
-
+                    {/* <div className={styles.heading}>Welcome to the Generator</div> */}
                     <div className={styles.InputContainer}>
                         <TextField fullWidth label="Subject" {...register("Subject", { required: true })} />
                     </div>
