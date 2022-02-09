@@ -23,7 +23,7 @@ export default function Home() {
           </span>
           <div className={styles.buttonContainer}>
             <Button style={{ minWidth: '18em', minHeight: '4em' }} variant="contained"><Link href='/Generator'>Get Started</Link></Button>
-            <Button style={{ minWidth: '18em', minHeight: '4em' }} variant="contained"><Link href='/About'>Learn More</Link></Button>
+            <Button style={{ minWidth: '18em', minHeight: '4em' }} variant="outlined"><Link href='/About'>Learn More</Link></Button>
           </div>
 
         </div>
