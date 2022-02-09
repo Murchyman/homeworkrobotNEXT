@@ -8,7 +8,8 @@ const Navbar = () => {
   return <div>
     <div className={styles.NavBar}>
       <div className={styles.Logo}>
-        <FontAwesomeIcon icon={["fas", "robot"]} />
+
+        <Link href='/'><FontAwesomeIcon icon={["fas", "robot"]} /></Link>
       </div>
       <div className={styles.NavBarLinks}>
 

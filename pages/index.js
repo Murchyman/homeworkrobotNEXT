@@ -33,6 +33,7 @@ export default function Home() {
             <Image
               src={example}
               alt="Picture of the software"
+              priority={true}
             />
           </div>
 

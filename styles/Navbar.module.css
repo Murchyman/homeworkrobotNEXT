@@ -5,26 +5,46 @@
   align-items: center;
   padding: 1em;
   display: flex;
-  font-size: x-large;
   flex-direction: row;
+  
+}
+
+.Logo{
+  font-size: 3em;
   
 }
 
 .NavBarLinks{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 2em;
 
 }
 
 .linkItem{
   margin-left: 1em;  
+  font-weight: 900;
+  font-size: 1.5em;
 }
   
 .linkItem:hover{
     
   color: #FE5F55;
 } 
-  @media screen and (max-width: 600px) {
 
+.Logo:hover{
+  color: #FE5F55;
+}
+  @media screen and (max-width: 600px) {
+    .Logo{
+      font-size: 2em;
+      
+    }
+    
+
+    .linkItem{
+      font-size: 1em;
+    }
   }
