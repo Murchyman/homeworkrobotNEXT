@@ -16,7 +16,7 @@ import { useState } from 'react';
 
 
 const DeadReportForm = () => {
-    const [Demoanswer, setDemoAnswer] = useState('');
+    const [Demoanswer, setDemoAnswer] = useState('Kangaroos are marsupials that live in Australia and some surrounding islands.They are the largest marsupials and the largest native mammals in Australia.They have powerful hind legs that they use to hop around, and they are known for their large, powerful tails.Kangaroos eat mostly grass, but they will also eat leaves, flowers, and fruits.The females have pouches on their bellies where they carry their young.The young kangaroos, called joeys, stay in their mothers pouches until they are old enough to start hopping around on their own. Kangaroos can live for up to 20 years.');
 
     const ButtonClick = () => {
         setDemoAnswer('Kangaroos are marsupials that live in Australia and some surrounding islands. They are the largest marsupials and the largest native mammals in Australia. They have powerful hind legs that they use to hop around, and they are known for their large, powerful tails. Kangaroos eat mostly grass, but they will also eat leaves, flowers, and fruits. The females have pouches on their bellies where they carry their young. The young kangaroos, called joeys, stay in their mothers pouches until they are old enough to start hopping around on their own. Kangaroos can live for up to 20 years.');
@@ -64,7 +64,7 @@ const DeadReportForm = () => {
 
                     <div className={styles.InputContainer}>
 
-                        <Button onClick={ButtonClick} variant="contained">Generate </Button> <span> ⬅</span>
+                        <Button onClick={ButtonClick} variant="contained">Generate </Button>
 
 
                     </div>
