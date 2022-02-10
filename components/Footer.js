@@ -21,6 +21,14 @@ const Footer = () => {
 
                     {/* <div className={styles.linkItem}><Link href='/Wip' passHref><FontAwesomeIcon icon={["fab", "twitter"]} /></Link></div>
                     <div className={styles.linkItem}><Link href='/Wip' passHref><FontAwesomeIcon icon={["fab", "facebook"]} /></Link></div> */}
+
+
+
+                    {/* basicaly, the child of the Link is FontAwesomeIcon which is a functional component which is giving me the functional components cannot
+                    be given refs error, essentialy I need to figure out how to apply the following
+                    https://nextjs.org/docs/api-reference/next/link#if-the-child-is-a-functional-component
+                    to the fontawesome functional component.....
+                    */}
                     <div className={styles.linkItem}><Link href='https://github.com/Murchyman' passHref><FontAwesomeIcon icon={["fab", "github"]} /></Link></div>
                     <div className={styles.linkItem}><Link href='https://www.linkedin.com/in/mitchell-benjamin-b9b9b11a2/' passHref><FontAwesomeIcon icon={["fab", "linkedin"]} /></Link></div>
                     <div className={styles.linkItem}><Link href='mailto:mitchellrbenjamin@outlook.com' passHref><FontAwesomeIcon icon="envelope" /></Link></div>
