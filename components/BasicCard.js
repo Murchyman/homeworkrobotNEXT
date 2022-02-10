@@ -5,7 +5,8 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
+import { useState } from "react";
+import { RWebShare } from "react-web-share";
 const bull = (
   <Box
     component="span"
@@ -27,8 +28,20 @@ export default function BasicCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
+
         <Button href='/About' size="small">Learn More</Button>
+        <div>
+          <RWebShare
+            data={{
+              text: "Check out Homework Robot, an awesome tool to help you write better homework",
+              url: "https://homeworkrobot.net",
+              title: "Homework Robot",
+            }}
+
+          >
+            <Button size="small">Share</Button>
+          </RWebShare>
+        </div>
       </CardActions>
     </Card>
   );
