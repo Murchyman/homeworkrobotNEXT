@@ -14,16 +14,16 @@ const Footer = () => {
 
                 <div className={styles.FooterLeft}>
                     <div className={styles.linkItem}><Link href='/'>Neo.  &copy; </Link>{year}</div>
-                    <div className={styles.linkItem}><Link href='/'>Terms</Link></div>
-                    <div className={styles.linkItem}><Link href='/'>Privacy</Link></div>
+                    <div className={styles.linkItem}><Link href='/Wip'>Terms</Link></div>
+                    <div className={styles.linkItem}><Link href='/Wip'>Privacy</Link></div>
                 </div>
                 <div className={styles.FooterRight}>
 
-                    <div className={styles.linkItem}><Link href='/' passHref><FontAwesomeIcon icon={["fab", "twitter"]} /></Link></div>
-                    <div className={styles.linkItem}><Link href='/' passHref><FontAwesomeIcon icon={["fab", "facebook"]} /></Link></div>
-                    <div className={styles.linkItem}><Link href='/' passHref><FontAwesomeIcon icon={["fab", "github"]} /></Link></div>
-                    <div className={styles.linkItem}><Link href='/' passHref><FontAwesomeIcon icon={["fab", "linkedin"]} /></Link></div>
-                    <div className={styles.linkItem}><Link href='/' passHref><FontAwesomeIcon icon="envelope" /></Link></div>
+                    <div className={styles.linkItem}><Link href='/Wip' passHref><FontAwesomeIcon icon={["fab", "twitter"]} /></Link></div>
+                    <div className={styles.linkItem}><Link href='/Wip' passHref><FontAwesomeIcon icon={["fab", "facebook"]} /></Link></div>
+                    <div className={styles.linkItem}><Link href='/Wip' passHref><FontAwesomeIcon icon={["fab", "github"]} /></Link></div>
+                    <div className={styles.linkItem}><Link href='/Wip' passHref><FontAwesomeIcon icon={["fab", "linkedin"]} /></Link></div>
+                    <div className={styles.linkItem}><Link href='/Wip' passHref><FontAwesomeIcon icon="envelope" /></Link></div>
 
 
 
