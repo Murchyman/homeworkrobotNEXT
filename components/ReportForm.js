@@ -101,7 +101,7 @@ const ReportForm = () => {
                 </div>
                 <div className={styles.Right}>
 
-                    <BasicCard response={answer} queryType={cardprompt} />
+                    <BasicCard response={answer} />
 
                 </div>
 

@@ -22,10 +22,7 @@ export default function BasicCard(props) {
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Result
         </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          {props.queryType}
-        </Typography>
-        <Typography variant="body2">
+        <Typography component={'span'} variant="body2">
           {props.response}
         </Typography>
       </CardContent>
