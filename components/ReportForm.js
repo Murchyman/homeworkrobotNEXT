@@ -38,14 +38,15 @@ const ReportForm = () => {
         let prompt = `Write ${radio} on ${FormData.Subject} with a max word count of ${FormData.MaxWordCount} and a goal word count of ${FormData.GoalWordCount}`;
         setcardPrompt(prompt);
         const params = {
-            value: prompt
+            value: prompt,
+            secret: '0f241464-125a-4deb-859d-085ef97e3a33',
         };
         const options = {
             method: 'POST',
             body: JSON.stringify(params)
         };
 
-        const response = await fetch('https://gwwzx7smad.execute-api.ap-southeast-2.amazonaws.com/default/test', options)
+        const response = await fetch('https://i8ljgz0bz3.execute-api.ap-southeast-2.amazonaws.com/default/HWR-OpenAiQuery-Prod', options)
             .then(response => response.json())
         setAnswer(response)
 
