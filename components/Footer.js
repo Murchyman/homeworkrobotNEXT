@@ -19,11 +19,11 @@ const Footer = () => {
                 </div>
                 <div className={styles.FooterRight}>
 
-                    <div className={styles.linkItem}><Link href='/'><FontAwesomeIcon icon={["fab", "twitter"]} /></Link></div>
-                    <div className={styles.linkItem}><Link href='/'><FontAwesomeIcon icon={["fab", "facebook"]} /></Link></div>
-                    <div className={styles.linkItem}><Link href='/'><FontAwesomeIcon icon={["fab", "github"]} /></Link></div>
-                    <div className={styles.linkItem}><Link href='/'><FontAwesomeIcon icon={["fab", "linkedin"]} /></Link></div>
-                    <div className={styles.linkItem}><Link href='/'><FontAwesomeIcon icon="envelope" /></Link></div>
+                    <div className={styles.linkItem}><Link href='/' passHref><FontAwesomeIcon icon={["fab", "twitter"]} /></Link></div>
+                    <div className={styles.linkItem}><Link href='/' passHref><FontAwesomeIcon icon={["fab", "facebook"]} /></Link></div>
+                    <div className={styles.linkItem}><Link href='/' passHref><FontAwesomeIcon icon={["fab", "github"]} /></Link></div>
+                    <div className={styles.linkItem}><Link href='/' passHref><FontAwesomeIcon icon={["fab", "linkedin"]} /></Link></div>
+                    <div className={styles.linkItem}><Link href='/' passHref><FontAwesomeIcon icon="envelope" /></Link></div>
 
 
 

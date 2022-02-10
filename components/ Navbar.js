@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className={styles.NavBar}>
       <div className={styles.Logo}>
 
-        <Link href='/'><FontAwesomeIcon icon={["fas", "robot"]} /></Link>
+        <Link href='/' passHref><FontAwesomeIcon icon={["fas", "robot"]} /></Link>
       </div>
       <div className={styles.NavBarLinks}>
 
