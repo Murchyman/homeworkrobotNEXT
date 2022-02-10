@@ -23,7 +23,7 @@ const Footer = () => {
                     <div className={styles.linkItem}><Link href='/Wip' passHref><FontAwesomeIcon icon={["fab", "facebook"]} /></Link></div> */}
                     <div className={styles.linkItem}><Link href='https://github.com/Murchyman' passHref><FontAwesomeIcon icon={["fab", "github"]} /></Link></div>
                     <div className={styles.linkItem}><Link href='https://www.linkedin.com/in/mitchell-benjamin-b9b9b11a2/' passHref><FontAwesomeIcon icon={["fab", "linkedin"]} /></Link></div>
-                    <div className={styles.linkItem}><Link href='mitchellrbenjamin@outlook.com' passHref><FontAwesomeIcon icon="envelope" /></Link></div>
+                    <div className={styles.linkItem}><Link href='mailto:mitchellrbenjamin@outlook.com' passHref><FontAwesomeIcon icon="envelope" /></Link></div>
 
 
 
