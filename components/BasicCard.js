@@ -28,7 +28,7 @@ export default function BasicCard(props) {
       </CardContent>
       <CardActions>
         <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button href='/About' size="small">Learn More</Button>
       </CardActions>
     </Card>
   );
