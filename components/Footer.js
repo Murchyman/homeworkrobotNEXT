@@ -28,6 +28,8 @@ const Footer = () => {
                     be given refs error, essentialy I need to figure out how to apply the following
                     https://nextjs.org/docs/api-reference/next/link#if-the-child-is-a-functional-component
                     to the fontawesome functional component.....
+
+                    fix this by replacing the icon component with an SVG of the icon if this error occurs again
                     */}
                     <div className={styles.linkItem}><Link href='https://github.com/Murchyman' passHref><FontAwesomeIcon icon={["fab", "github"]} /></Link></div>
                     <div className={styles.linkItem}><Link href='https://www.linkedin.com/in/mitchell-benjamin-b9b9b11a2/' passHref><FontAwesomeIcon icon={["fab", "linkedin"]} /></Link></div>
