@@ -13,6 +13,7 @@ margin: 8em;
     align-items: center;
     text-align: left;
    
+   
 }
 
 .heading{
@@ -51,4 +52,43 @@ margin: 8em;
   .blue{
     color: #02A9EA;
   }
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+   
+}
+.imageArea{
+
+}
+.heading{
+    font-size: 2em;
+    font-weight: normal;
+    color: #0C0f0A;
+    width: 100%;
+}
+.HeaderBox{
+  margin: 0em;
+  padding: 2em;
+  
+  }
+  .subHeading{
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #0C0f0A;
+    width: 100%;
+    margin-top: 2em;
+}
+.list{
+  text-align: left;
+}
+
+}
   
