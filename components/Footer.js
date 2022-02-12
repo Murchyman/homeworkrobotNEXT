@@ -14,7 +14,7 @@ const Footer = () => {
 
                 <div className={styles.FooterLeft}>
                     <div className={styles.linkItem}><Link href='/'>Neo.  &copy; </Link>{year}</div>
-                    <div className={styles.linkItem}><Link href='/Terms'>Terms</Link></div>
+                    <div className={styles.linkItem}><Link href='/Contact'>Contact</Link></div>
                     <div className={styles.linkItem}><Link href='/Privacy'>Privacy</Link></div>
                 </div>
                 <div className={styles.FooterRight}>
