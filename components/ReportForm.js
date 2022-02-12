@@ -63,7 +63,7 @@ const ReportForm = () => {
                 <div className={styles.Left}>
                     {/* <div className={styles.heading}>Welcome to the Generator</div> */}
                     <div className={styles.InputContainer}>
-                        <TextField fullWidth label="Subject" {...register("Subject", { required: true })} />
+                        <TextField fullWidth label="Subject (max 100 characters)" {...register("Subject", { required: true, maxLength: 100 })} />
                     </div>
 
                     <div className={styles.InputContainer}>
@@ -83,13 +83,13 @@ const ReportForm = () => {
                     {/* number input taking max word count and desired wordcount */}
                     <div className={styles.InputContainer}>
 
-                        <TextField {...register("GoalWordCount", { required: true })} label="Goal Wordcount" variant="outlined" />
+                        <TextField {...register("GoalWordCount", { required: true, min: 0, max: 700 })} label="Goal Wordcount (max 700)" variant="outlined" />
 
                     </div>
 
                     <div className={styles.InputContainer}>
 
-                        <TextField {...register("MaxWordCount", { required: true })} label="Max WordCount" variant="outlined" />
+                        <TextField {...register("MaxWordCount", { required: true, min: 0, max: 700 })} label="Max WordCount (max 700)" variant="outlined" />
 
                     </div>
 
