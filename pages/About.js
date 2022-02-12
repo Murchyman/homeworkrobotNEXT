@@ -26,13 +26,15 @@ const About = () => {
 
                 <div className={styles.HeaderBox}>
                     <div className={styles.heading}>
-                        <span>Who's Involved?</span>
+                        <span>Who is Involved?</span>
                     </div>
                     <div className={styles.subHeading}>
                         <span> We are a growing team based in Queensland Australia. We hire professionals from all across the globe to create our unique products and services.</span>
-                    </div>
-                    <div className={styles.subHeading}>
+                        <br /><br />
                         <span>Some key employees include</span>
+                    </div>
+                    <div className={styles.list}>
+
                         <ul>
                             <li>
                                 <span>Mitchell Benjamin (CEO)</span>
