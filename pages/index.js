@@ -21,8 +21,8 @@ export default function Home() {
           <span className={styles.paragraph}>Homework Robot is an Ai driven study assistant that lets you focus on the important stuff while our artificial intelligence delivers you high quality notes and reports. Best of all Homework Robot is 100% free to use!
           </span>
           <div className={styles.buttonContainer}>
-            <Link href='/Generator' passHref><Button className="navbar-brand" style={{ minWidth: '17em', minHeight: '4em' }} variant="contained">Get Started</Button></Link>
-            <Link href='/About' passHref><Button className="navbar-brand" style={{ minWidth: '17em', minHeight: '4em' }} variant="outlined">Learn More</Button></Link>
+            <Link href='/Generator' passHref><Button className="navbar-brand" style={{ minWidth: '12em', minHeight: '4em' }} variant="contained">Get Started</Button></Link>
+            <Link href='/About' passHref><Button className="navbar-brand" style={{ minWidth: '12em', minHeight: '4em' }} variant="outlined">Learn More</Button></Link>
 
           </div>
 
