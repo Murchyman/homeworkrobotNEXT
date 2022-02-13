@@ -32,9 +32,9 @@ const Footer = () => {
 
                     fix this by replacing the icon component with an SVG of the icon if this error occurs again
                     */}
-                    <div className={styles.linkItem}><Link href='https://github.com/Murchyman' passHref><FontAwesomeIcon icon={["fab", "github"]} /></Link></div>
-                    <div className={styles.linkItem}><Link href='https://www.linkedin.com/in/mitchell-benjamin-b9b9b11a2/' passHref><FontAwesomeIcon icon={["fab", "linkedin"]} /></Link></div>
-                    <div className={styles.linkItem}><Link href='mailto:support@homeworkrobot.net' passHref><FontAwesomeIcon icon="envelope" /></Link></div>
+                    <div className={styles.linkItem}><Link href='https://github.com/Murchyman'><a><FontAwesomeIcon icon={["fab", "github"]} /></a></Link></div>
+                    <div className={styles.linkItem}><Link href='https://www.linkedin.com/in/mitchell-benjamin-b9b9b11a2/'><a><FontAwesomeIcon icon={["fab", "linkedin"]} /></a></Link></div>
+                    <div className={styles.linkItem}><Link href='mailto:support@homeworkrobot.net'><a><FontAwesomeIcon icon="envelope" /></a></Link></div>
 
 
 
