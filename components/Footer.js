@@ -13,9 +13,10 @@ const Footer = () => {
             <div className={styles.Footer}>
 
                 <div className={styles.FooterLeft}>
-                    <div className={styles.linkItem}><Link href='/'>Neo.  &copy; </Link>{year}</div>
-                    <div className={styles.linkItem}><Link href='/Contact'>Contact</Link></div>
-                    <div className={styles.linkItem}><Link href='/Privacy'>Privacy</Link></div>
+                    <div className={styles.linkItem}><>Neo.  &copy;</>{year}</div>
+                    <div className={styles.linkItem}><Link href='/contact'>Contact</Link></div>
+                    <div className={styles.linkItem}><Link href='/privacy'>Privacy Policy</Link></div>
+                    <div className={styles.linkItem}><Link href='/terms'>Terms of Use</Link></div>
                 </div>
                 <div className={styles.FooterRight}>
 
