@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    width: 100%;
+    margin: 2em;
+    }
+    .subContainer{
+        width: 90%;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+       
+    }
+    .heading{
+        font-size: 5em;
+        font-weight: 900;
+        margin-top: 1em;
+    }
+
+    .links{
+        font-size: 2em;
+        margin-top: 1em;
+        cursor: pointer;
+        color: #FE5F55;
+    }
+    .links:hover{
+        color: #ff3d2f;
+    }
+    .subHeading{
+        font-size: 1.5em;
+        font-weight: 900;
+        margin-top: 1em;
+        
+    }
