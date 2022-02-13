@@ -14,8 +14,10 @@ const contact = () => {
                 <div className={styles.heading}>Need Some Help?</div>
                 <div className={styles.subHeading}><span>We&apos;d love to help you out, please contact us below</span></div>
                 <div className={styles.links}><Link passHref href={'mailto:support@homeworkrobot.net'}><span><FontAwesomeIcon icon="envelope" />  support@homeworkrobot.net</span></Link> </div>
-                <Image src='/support.svg' width={1000} height={600} alt='' />
+
             </div>
+            <Image src='/support.svg' width={1000} height={600} alt='' />
+
         </div >
     )
 }

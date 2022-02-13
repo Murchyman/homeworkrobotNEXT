@@ -8,7 +8,7 @@
     }
     .subContainer{
         width: 90%;
-        height: 80vh;
+        height: 40vh;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -24,6 +24,7 @@
     .links{
         font-size: 2em;
         margin-top: 1em;
+        
         cursor: pointer;
         color: #FE5F55;
     }
