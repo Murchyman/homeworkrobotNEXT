@@ -39,7 +39,7 @@ const ReportForm = () => {
         setcardPrompt(prompt);
         const params = {
             value: prompt,
-            secret: '0f241464-125a-4deb-859d-085ef97e3a33',
+            secret: process.env.secret,
         };
         const options = {
             method: 'POST',
