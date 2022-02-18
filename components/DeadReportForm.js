@@ -7,6 +7,8 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
+import Paper from '@mui/material/Paper';
+
 
 
 
@@ -16,10 +18,10 @@ import { useState } from 'react';
 
 
 const DeadReportForm = () => {
-    const [Demoanswer, setDemoAnswer] = useState('Kangaroos are marsupials that live in Australia and some surrounding islands.They are the largest marsupials and the largest native mammals in Australia.They have powerful hind legs that they use to hop around, and they are known for their large, powerful tails.Kangaroos eat mostly grass, but they will also eat leaves, flowers, and fruits.The females have pouches on their bellies where they carry their young.The young kangaroos, called joeys, stay in their mothers pouches until they are old enough to start hopping around on their own. Kangaroos can live for up to 20 years.');
-
+    const answervalue = 'Services and facilities can affect how liveable a place is by providing residents with amenities that make their lives easier and more enjoyable. Services and facilities can include things like public transportation, libraries, parks, and recreation centres. These amenities can make a neighbourhood more attractive to residents and help to promote a sense of community. They can also make it easier for residents to get around and access the services and facilities they need.'
+    const [Demoanswer, setDemoAnswer] = useState(answervalue);
     const ButtonClick = () => {
-        setDemoAnswer('Kangaroos are marsupials that live in Australia and some surrounding islands. They are the largest marsupials and the largest native mammals in Australia. They have powerful hind legs that they use to hop around, and they are known for their large, powerful tails. Kangaroos eat mostly grass, but they will also eat leaves, flowers, and fruits. The females have pouches on their bellies where they carry their young. The young kangaroos, called joeys, stay in their mothers pouches until they are old enough to start hopping around on their own. Kangaroos can live for up to 20 years.');
+        setDemoAnswer(answervalue);
     }
 
 
@@ -29,9 +31,16 @@ const DeadReportForm = () => {
 
             <div className={styles.formGroup}>
                 <div className={styles.Left}>
+                    <h2>Step 1, Homework 🤦‍♀️</h2>
+                    <Paper className={styles.question} elevation={5}>Task 2a: Explain how services and facilities can affect how liveable a place is.
+                        <br /> Please type your answer in the box provided (50-100 words):
+                    </Paper>
+                    <h2>Step 2, Homework Robot 🤖</h2>
                     {/* <div className={styles.heading}>Welcome to the Generator</div> */}
                     <div className={styles.InputContainer}>
-                        <TextField label={'Subject'} fullWidth value={'The Kangaroo'} />
+                        <TextField
+                            multiline
+                            label={'Subject'} maxRows={4} fullWidth value={'how services and facilities can affect how liveable a place is'} />
 
                     </div>
 
@@ -41,7 +50,7 @@ const DeadReportForm = () => {
 
                         >
                             <FormControlLabel value="a Report" control={<Radio checked />} label="Report" />
-                            <FormControlLabel value="some key points I should know when studying" control={<Radio disabled />} label="Notes" />
+                            <FormControlLabel value="some notes about" control={<Radio disabled />} label="Notes" />
 
 
 
@@ -52,15 +61,10 @@ const DeadReportForm = () => {
                     {/* number input taking max word count and desired wordcount */}
                     <div className={styles.InputContainer}>
 
-                        <TextField label="Goal Wordcount" value={'100'} variant="outlined" />
+                        <TextField label="Goal Wordcount" value={'50-100'} variant="outlined" />
 
                     </div>
 
-                    <div className={styles.InputContainer}>
-
-                        <TextField label="Max WordCount" value={'150'} variant="outlined" />
-
-                    </div>
 
                     <div className={styles.InputContainer}>
 
@@ -74,6 +78,7 @@ const DeadReportForm = () => {
                     <BasicCard response={Demoanswer} />
 
                 </div>
+                <h2>Step 3, Repeat 😎</h2>
 
             </div>
 

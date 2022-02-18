@@ -19,7 +19,7 @@ const About = () => {
                 </div>
 
                 <div className={styles.imageArea}>
-                    <img src='/support.svg' />
+                    <img src='/aboutRobot.png' alt="about" />
 
                 </div>
 
@@ -39,8 +39,13 @@ const About = () => {
                                 <span>Mitchell Benjamin (CEO)</span>
                             </li>
                             <li>
-                                <span>John Stevens (CTO)</span>
+                                <span>Nicholas McKeown (CMO)</span>
                             </li>
+
+                            <li>
+                                <span>Ethan Belton (CGO)</span>
+                            </li>
+
                             <li>
                                 <span>Janice Crane (Secretary)</span>
                             </li>

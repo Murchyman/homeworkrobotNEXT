@@ -33,7 +33,7 @@ export default function BasicCard(props) {
         <div>
           <RWebShare
             data={{
-              text: "Check out Homework Robot, an awesome tool to help you create better homework",
+              text: "Check Out Homework Robot, The Awesome Website That Does Your Homework For You!",
               url: "https://homeworkrobot.net",
               title: "Homework Robot",
             }}
