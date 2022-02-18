@@ -39,8 +39,13 @@ const About = () => {
                                 <span>Mitchell Benjamin (CEO)</span>
                             </li>
                             <li>
-                                <span>John Stevens (CTO)</span>
+                                <span>Nicholas McKeown (CTO)</span>
                             </li>
+
+                            <li>
+                                <span>Ethan Belton (CCO)</span>
+                            </li>
+
                             <li>
                                 <span>Janice Crane (Secretary)</span>
                             </li>

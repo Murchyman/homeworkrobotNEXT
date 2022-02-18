@@ -16,8 +16,8 @@ const contact = () => {
                 <div className={styles.links}><Link passHref href={'mailto:support@homeworkrobot.net'}><span><FontAwesomeIcon icon="envelope" />  support@homeworkrobot.net</span></Link> </div>
 
             </div>
-            <img src='/support.png' alt='' />
 
+            <img src='/support.png' alt='' />
         </div >
     )
 }
