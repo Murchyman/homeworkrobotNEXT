@@ -10,6 +10,16 @@
     
 }
 
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    background-color: #F0EDEE;
+    margin-bottom: 1em;
+
+}
+
 .bigFont{
     font-size: 1.5em;
 }
@@ -38,7 +48,7 @@
 
 .Right{
 
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     width: 80%;
     
 }

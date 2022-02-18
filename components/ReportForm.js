@@ -35,7 +35,7 @@ const ReportForm = () => {
         FormData = JSON.parse(FormData);
 
 
-        let prompt = `Write ${radio} on ${FormData.Subject} with a max word count of ${FormData.MaxWordCount} and a goal word count of ${FormData.GoalWordCount}`;
+        let prompt = `Write ${radio} on ${FormData.Subject} a goal word count of ${FormData.GoalWordCount}`;
         setcardPrompt(prompt);
         const params = {
             value: prompt,
@@ -63,7 +63,7 @@ const ReportForm = () => {
                 <div className={styles.Left}>
                     {/* <div className={styles.heading}>Welcome to the Generator</div> */}
                     <div className={styles.InputContainer}>
-                        <TextField fullWidth label="Subject (max 100 characters)" {...register("Subject", { required: true, maxLength: 100 })} />
+                        <TextField fullWidth label="Subject or Question (max 100 characters)" {...register("Subject", { required: true, maxLength: 100 })} />
                     </div>
 
                     <div className={styles.InputContainer}>
@@ -83,15 +83,11 @@ const ReportForm = () => {
                     {/* number input taking max word count and desired wordcount */}
                     <div className={styles.InputContainer}>
 
-                        <TextField {...register("GoalWordCount", { required: true, min: 0, max: 700 })} label="Goal Wordcount (max 700)" variant="outlined" />
+                        <TextField fullWidth {...register("GoalWordCount", { required: true, min: 0, max: 200 })} label="Goal Wordcount (range 0 - 150)" variant="outlined" />
 
                     </div>
 
-                    <div className={styles.InputContainer}>
 
-                        <TextField {...register("MaxWordCount", { required: true, min: 0, max: 700 })} label="Max WordCount (max 700)" variant="outlined" />
-
-                    </div>
 
                     <div className={styles.InputContainer}>
 
