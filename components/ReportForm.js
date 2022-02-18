@@ -35,7 +35,7 @@ const ReportForm = () => {
         FormData = JSON.parse(FormData);
 
 
-        let prompt = `Write ${radio} on ${FormData.Subject} a goal word count of ${FormData.GoalWordCount}`;
+        let prompt = `Write ${radio} on ${FormData.Subject} with a goal word count of ${FormData.GoalWordCount}`;
         setcardPrompt(prompt);
         const params = {
             value: prompt,
@@ -48,7 +48,10 @@ const ReportForm = () => {
 
         const response = await fetch('https://i8ljgz0bz3.execute-api.ap-southeast-2.amazonaws.com/default/HWR-OpenAiQuery-Prod', options)
             .then(response => response.json())
-        setAnswer(response)
+
+        //replace dash in response with letter b then set answer
+        let responseString = response.replace(/-/g, '🤦‍♀️');
+        setAnswer(responseString);
 
 
         return response;
@@ -72,7 +75,7 @@ const ReportForm = () => {
 
                             {...register("RadioChoice")}>
                             <FormControlLabel onChange={(e) => setRadio(e.target.value)} value="a Report" control={<Radio />} label="Report" />
-                            <FormControlLabel onChange={(e) => setRadio(e.target.value)} value="some key points I should know when studying" control={<Radio />} label="Notes" />
+                            <FormControlLabel onChange={(e) => setRadio(e.target.value)} value="notes" control={<Radio />} label="Notes" />
 
 
 
