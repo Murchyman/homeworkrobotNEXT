@@ -39,11 +39,11 @@ const About = () => {
                                 <span>Mitchell Benjamin (CEO)</span>
                             </li>
                             <li>
-                                <span>Nicholas McKeown (CTO)</span>
+                                <span>Nicholas McKeown (CMO)</span>
                             </li>
 
                             <li>
-                                <span>Ethan Belton (CCO)</span>
+                                <span>Ethan Belton (CGO)</span>
                             </li>
 
                             <li>
