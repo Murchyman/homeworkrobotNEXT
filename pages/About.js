@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from '../styles/About.module.css'
-import Image from 'next/image'
 const About = () => {
     return (
         <>
@@ -20,7 +19,7 @@ const About = () => {
                 </div>
 
                 <div className={styles.imageArea}>
-                    <Image src='/icons/WritingRobot.svg' width={1000} height={700} alt='' />
+                    <img src='/support.svg' />
 
                 </div>
 
