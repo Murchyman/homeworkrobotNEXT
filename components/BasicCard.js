@@ -5,7 +5,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { useState } from "react";
+import Styles from '../styles/BasicCard.module.css';
 import { RWebShare } from "react-web-share";
 const bull = (
   <Box
@@ -23,8 +23,8 @@ export default function BasicCard(props) {
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Result
         </Typography>
-        <Typography component={'span'} variant="body2">
-          {props.response}
+        <Typography component={'div'} variant="body2">
+          <div className={Styles.newLine}>{props.response}</div>
         </Typography>
       </CardContent>
       <CardActions>

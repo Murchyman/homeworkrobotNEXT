@@ -49,9 +49,10 @@ const ReportForm = () => {
         const response = await fetch('https://i8ljgz0bz3.execute-api.ap-southeast-2.amazonaws.com/default/HWR-OpenAiQuery-Prod', options)
             .then(response => response.json())
 
-        //replace dash in response with letter b then set answer
-        let responseString = response.replace(/-/g, '🤦‍♀️');
-        setAnswer(responseString);
+
+
+        setAnswer(response);
+
 
 
         return response;
@@ -64,7 +65,7 @@ const ReportForm = () => {
 
             <div className={styles.formGroup}>
                 <div className={styles.Left}>
-                    {/* <div className={styles.heading}>Welcome to the Generator</div> */}
+
                     <div className={styles.InputContainer}>
                         <TextField fullWidth label="Subject or Question (max 100 characters)" {...register("Subject", { required: true, maxLength: 100 })} />
                     </div>
@@ -75,7 +76,7 @@ const ReportForm = () => {
 
                             {...register("RadioChoice")}>
                             <FormControlLabel onChange={(e) => setRadio(e.target.value)} value="a Report" control={<Radio />} label="Report" />
-                            <FormControlLabel onChange={(e) => setRadio(e.target.value)} value="notes" control={<Radio />} label="Notes" />
+                            <FormControlLabel onChange={(e) => setRadio(e.target.value)} value="key points I should know" control={<Radio />} label="Notes" />
 
 
 

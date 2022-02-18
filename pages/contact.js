@@ -18,6 +18,7 @@ const contact = () => {
             </div>
 
             <img src='/support.png' alt='' />
+
         </div >
     )
 }
