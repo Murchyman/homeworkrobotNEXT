@@ -20,29 +20,18 @@ const Footer = () => {
                 </div>
                 <div className={styles.FooterRight}>
 
-                    {/* <div className={styles.linkItem}><Link href='/Wip' passHref><FontAwesomeIcon icon={["fab", "twitter"]} /></Link></div>
-                    <div className={styles.linkItem}><Link href='/Wip' passHref><FontAwesomeIcon icon={["fab", "facebook"]} /></Link></div> */}
+
+                    <div className={styles.linkItem}> <a href='https://github.com/Murchyman' target="_blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={["fab", "github"]} /></a></div>
+                    <div className={styles.linkItem}><a href='https://www.linkedin.com/in/mitchell-benjamin-b9b9b11a2/' target="_blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={["fab", "linkedin"]} /></a></div>
+                    <div className={styles.linkItem}> <a href='mailto:support@homeworkrobot.net' target="_blank" rel="noopener noreferrer" ><FontAwesomeIcon icon="envelope" /></a></div>
 
 
 
-                    {/* basicaly, the child of the Link is FontAwesomeIcon which is a functional component which is giving me the functional components cannot
-                    be given refs error, essentialy I need to figure out how to apply the following
-                    https://nextjs.org/docs/api-reference/next/link#if-the-child-is-a-functional-component
-                    to the fontawesome functional component.....
-
-                    fix this by replacing the icon component with an SVG of the icon if this error occurs again
-                    */}
-                    <div className={styles.linkItem}><Link href='https://github.com/Murchyman'><a><FontAwesomeIcon icon={["fab", "github"]} /></a></Link></div>
-                    <div className={styles.linkItem}><Link href='https://www.linkedin.com/in/mitchell-benjamin-b9b9b11a2/'><a><FontAwesomeIcon icon={["fab", "linkedin"]} /></a></Link></div>
-                    <div className={styles.linkItem}><Link href='mailto:support@homeworkrobot.net'><a><FontAwesomeIcon icon="envelope" /></a></Link></div>
+                </div >
+            </div >
 
 
-
-                </div>
-            </div>
-
-
-        </div>
+        </div >
     )
 
 
