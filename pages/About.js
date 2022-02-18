@@ -19,7 +19,7 @@ const About = () => {
                 </div>
 
                 <div className={styles.imageArea}>
-                    <img src='/support.svg' />
+                    <img src='/aboutRobot.png' alt="about" />
 
                 </div>
 
