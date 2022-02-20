@@ -22,6 +22,22 @@ function MyApp({ Component, pageProps }) {
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
       />
 
+      <Script
+        strategy='lazyOnload'
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+      />
+      <Script id='ga-analytics'>
+        {
+          `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+          `
+        }
+      </Script>
+
       <Head>
         <title>HomeWork Robot</title>
         <meta name="description" content="With HomeWork Robot, get instant answers to questions or writing prompts" />
