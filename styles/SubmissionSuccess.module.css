@@ -1,0 +1,25 @@
+.container{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.subContainer{
+    
+width: 50%;
+}
+
+.heading{
+    font-size: 2em;
+    font-weight: 900;
+    margin-top: 1em;
+}
+
+.subHeading{
+    font-size: 1em;
+    font-weight: 900;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
