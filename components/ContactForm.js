@@ -4,6 +4,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useForm } from "react-hook-form";
 import { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha'
 
 const ContactForm = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -63,11 +64,16 @@ const ContactForm = () => {
                     <TextField id="outlined-basic" error={errors.Message} fullWidth multiline minRows={4} label="Message" variant="outlined" {...register("Message", { required: true, maxLength: 500 })} />
                 </div>
                 <div className={styles.FormBox}>
-                    <Button variant="contained" style={{ minWidth: '50%', minHeight: '3em' }} onClick={handleSubmit(onSubmit)}>SubmiT</Button>
-
-
+                    <ReCAPTCHA size="normal" sitekey="6LdNzJceAAAAAEruX-w1fyEVaMUZzbbmwgPig14I" />
                 </div>
-                <span>{answer}</span>
+                <div className={styles.FormBox}>
+                    <Button variant="contained" style={{ minWidth: '50%', minHeight: '3em' }} onClick={handleSubmit(onSubmit)}>SubmiT</Button>
+                </div>
+                <div className={styles.FormBox}>
+                    <p>{answer}</p>
+                </div>
+
+
 
             </div>
 
