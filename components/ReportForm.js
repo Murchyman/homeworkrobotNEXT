@@ -30,11 +30,11 @@ const ReportForm = () => {
     // Gain some more IQ to make this better, use the proper react form hook way
     const [radio, setRadio] = useState('');
     const [cardprompt, setcardPrompt] = useState('');
+
+
     const SendQuery = async (FormData) => {
         setAnswer(<Spinner />);
         FormData = JSON.parse(FormData);
-
-
         let prompt = `Write ${radio} on ${FormData.Subject} with a goal word count of ${FormData.GoalWordCount}`;
         setcardPrompt(prompt);
         const params = {
