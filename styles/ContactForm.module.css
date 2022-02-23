@@ -1,0 +1,13 @@
+.Container{
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.FormBox{
+    margin: 1em;
+    width: 50%;
+}
