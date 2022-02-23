@@ -5,8 +5,14 @@ import Button from '@mui/material/Button';
 import { useForm } from "react-hook-form";
 import { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha'
+import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, fas)
 
-const ContactForm = () => {
+const ContactForm = (props) => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const [answer, setAnswer] = useState('')
 
@@ -37,7 +43,8 @@ const ContactForm = () => {
         const response = await fetch('https://hjvt786p0a.execute-api.ap-southeast-2.amazonaws.com/default/neoAffiliatesBeta', options)
             .then(response => response.json()).catch(err => console.log(err));
 
-
+        { props.setIsSubmitted(true) }
+        { props.setEmail(FormData.Email) }
 
         setAnswer('successfully sent');
 
@@ -50,7 +57,8 @@ const ContactForm = () => {
         <>
 
             <div className={styles.Container}>
-
+                <div className={styles.heading}>Need Some Help?</div>
+                <div className={styles.subHeading}><span>We&apos;d love to help you out, please contact us below</span></div>
                 <div className={styles.FormBox}>
                     <TextField id="outlined-basic" error={errors.Name} fullWidth label="Name" variant="outlined" {...register("Name", { required: true, maxLength: 30 })} />
 
@@ -67,12 +75,10 @@ const ContactForm = () => {
                     <ReCAPTCHA size="normal" sitekey="6LdNzJceAAAAAEruX-w1fyEVaMUZzbbmwgPig14I" />
                 </div>
                 <div className={styles.FormBox}>
-                    <Button variant="contained" style={{ minWidth: '50%', minHeight: '3em' }} onClick={handleSubmit(onSubmit)}>SubmiT</Button>
+                    <Button variant="contained" style={{ minWidth: '100%', minHeight: '3em' }} onClick={handleSubmit(onSubmit)}>SubmiT</Button>
                 </div>
-                <div className={styles.FormBox}>
-                    <p>{answer}</p>
-                </div>
-
+                <div className={styles.links}><Link passHref href={'mailto:support@homeworkrobot.net'}><span><FontAwesomeIcon icon="envelope" />  support@homeworkrobot.net</span></Link> </div>
+                <img src='/support.png' alt='' />
 
 
             </div>
