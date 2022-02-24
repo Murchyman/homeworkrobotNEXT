@@ -19,6 +19,9 @@ const ContactForm = (props) => {
 
     const SendQuery = async (FormData) => {
         FormData = JSON.parse(FormData);
+        if (FormData.FullName != "") {
+            return null;
+        }
         const params = {
             Text: FormData.Message,
             Email: FormData.Email,
@@ -61,10 +64,10 @@ const ContactForm = (props) => {
                     <TextField id="outlined-basic" error={errors.Message} fullWidth multiline minRows={4} label="Message" variant="outlined" {...register("Message", { required: true, maxLength: 500 })} />
                 </div>
                 <div className={styles.FormBox}>
-
+                    <TextField className={styles.FullName} id="FullName" error={errors.Recaptcha} fullWidth label="please leave empty if visible" variant="outlined" {...register("FullName", { maxLength: 30 })} />
                 </div>
                 <div className={styles.FormBox}>
-                    <Button variant="contained" style={{ minWidth: '100%', minHeight: '3em' }} onClick={handleSubmit(onSubmit)}>SubmiT</Button>
+                    <Button variant="contained" style={{ minWidth: '100%', minHeight: '3em' }} onClick={handleSubmit(onSubmit)}>SUBMIT</Button>
                 </div>
                 <div className={styles.links}><Link passHref href={'mailto:support@homeworkrobot.net'}><span><FontAwesomeIcon icon="envelope" />  support@homeworkrobot.net</span></Link> </div>
                 <img src='/support.png' alt='' />
