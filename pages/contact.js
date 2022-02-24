@@ -4,7 +4,7 @@ import styles from '../styles/contact.module.css'
 import ContactForm from '../components/ContactForm'
 import { useState } from 'react'
 
-const contact = () => {
+const Contact = () => {
 
     const [isSubmitted, setIsSubmitted] = useState(false)
     const [email, setEmail] = useState('')
@@ -34,4 +34,4 @@ const contact = () => {
     )
 }
 
-export default contact
+export default Contact
