@@ -89,7 +89,7 @@ const ReportForm = () => {
                     {/* number input taking max word count and desired wordcount */}
                     <div className={styles.InputContainer}>
 
-                        <TextField fullWidth error={errors.GoalWordCount} {...register("GoalWordCount", { required: true, min: 0, max: 200 })} label="Goal Wordcount (range 0 - 150)" variant="outlined" />
+                        <TextField fullWidth error={errors.GoalWordCount} {...register("GoalWordCount", { required: true, min: 0, max: 200 })} label="Goal Wordcount" helperText="(range 0 - 150)" variant="outlined" />
 
                     </div>
 
