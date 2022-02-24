@@ -8,12 +8,12 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import Checkbox from '@mui/material/Checkbox';
 import { useState } from 'react';
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 
 
 const ReportForm = () => {
+
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const { control, reset } = useForm({
@@ -26,17 +26,19 @@ const ReportForm = () => {
         SendQuery(JSON.stringify(data));
     };
 
+    const [isButtonDisabled, setIsButtonDisabled] = useState(false);
     const [answer, setAnswer] = useState('....');
     // Gain some more IQ to make this better, use the proper react form hook way
     const [radio, setRadio] = useState('');
-    const [cardprompt, setcardPrompt] = useState('');
+
 
 
     const SendQuery = async (FormData) => {
+        setIsButtonDisabled(true);
         setAnswer(<Spinner />);
         FormData = JSON.parse(FormData);
         let prompt = `Write ${radio} on ${FormData.Subject} with a goal word count of ${FormData.GoalWordCount}`;
-        setcardPrompt(prompt);
+
         const params = {
             value: prompt,
             secret: process.env.secret,
@@ -52,7 +54,7 @@ const ReportForm = () => {
 
 
         setAnswer(response);
-
+        setIsButtonDisabled(false);
 
 
         return response;
@@ -95,7 +97,7 @@ const ReportForm = () => {
 
                     <div className={styles.InputContainer}>
 
-                        <Button type='submit' variant="contained">Generate</Button>
+                        <Button disabled={isButtonDisabled} type='submit' variant="contained">Generate</Button>
 
                     </div>
                 </div>
