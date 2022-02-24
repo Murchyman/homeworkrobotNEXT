@@ -69,14 +69,14 @@ const ReportForm = () => {
                 <div className={styles.Left}>
 
                     <div className={styles.InputContainer}>
-                        <TextField fullWidth label="Subject or Question (max 100 characters)" {...register("Subject", { required: true, maxLength: 100 })} />
+                        <TextField error={errors.Subject} fullWidth label="Subject or Question" helperText="(max 100 characters)" {...register("Subject", { required: true, maxLength: 100 })} />
                     </div>
 
                     <div className={styles.InputContainer}>
                         <RadioGroup
                             aria-labelledby="demo-radio-buttons-group-label"
-
-                            {...register("RadioChoice")}>
+                            error={errors.RadioChoice}
+                            {...register("RadioChoice", { required: true })}>
                             <FormControlLabel onChange={(e) => setRadio(e.target.value)} value="a Report" control={<Radio />} label="Report" />
                             <FormControlLabel onChange={(e) => setRadio(e.target.value)} value="key points I should know" control={<Radio />} label="Notes" />
 
@@ -89,7 +89,7 @@ const ReportForm = () => {
                     {/* number input taking max word count and desired wordcount */}
                     <div className={styles.InputContainer}>
 
-                        <TextField fullWidth {...register("GoalWordCount", { required: true, min: 0, max: 200 })} label="Goal Wordcount (range 0 - 150)" variant="outlined" />
+                        <TextField fullWidth error={errors.GoalWordCount} {...register("GoalWordCount", { required: true, min: 0, max: 200 })} label="Goal Wordcount (range 0 - 150)" variant="outlined" />
 
                     </div>
 
