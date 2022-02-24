@@ -3,8 +3,6 @@ import styles from '../styles/ContactForm.module.css'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useForm } from "react-hook-form";
-import { useState } from 'react';
-import ReCAPTCHA from 'react-google-recaptcha'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -14,7 +12,6 @@ library.add(fab, fas)
 
 const ContactForm = (props) => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const [answer, setAnswer] = useState('')
 
     const onSubmit = (data) => {
         SendQuery(JSON.stringify(data));
@@ -27,14 +24,6 @@ const ContactForm = (props) => {
             Email: FormData.Email,
             Name: FormData.Name,
         }
-        // const params = {
-        //     value: prompt,
-        //     secret: process.env.secret,
-        // };
-        // const options = {
-        //     method: 'POST',
-        //     body: JSON.stringify(params)
-        // };
         const options = {
             method: 'POST',
             body: JSON.stringify(params)
@@ -46,7 +35,7 @@ const ContactForm = (props) => {
         { props.setIsSubmitted(true) }
         { props.setEmail(FormData.Email) }
 
-        setAnswer('successfully sent');
+
 
         return response;
     }
@@ -72,7 +61,7 @@ const ContactForm = (props) => {
                     <TextField id="outlined-basic" error={errors.Message} fullWidth multiline minRows={4} label="Message" variant="outlined" {...register("Message", { required: true, maxLength: 500 })} />
                 </div>
                 <div className={styles.FormBox}>
-                    <ReCAPTCHA size="normal" sitekey="6LdNzJceAAAAAEruX-w1fyEVaMUZzbbmwgPig14I" />
+
                 </div>
                 <div className={styles.FormBox}>
                     <Button variant="contained" style={{ minWidth: '100%', minHeight: '3em' }} onClick={handleSubmit(onSubmit)}>SubmiT</Button>
