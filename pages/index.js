@@ -15,15 +15,13 @@ export default function Home() {
 
       <div className={styles.subContainer}>
         <div className={styles.left}>
-          <span className={styles.heading}>Your <span className={styles.pink}>Ai</span> Homework Assistant. With
-            <span className={styles.orange}> HomeWork Robot,</span> get <span className={styles.blue}>instant answers </span>
-            to questions or writing prompts</span>
-          <span className={styles.paragraph}>Homework Robot is an Ai driven study assistant that lets you focus on the important stuff while our artificial intelligence delivers you high quality notes and reports. Best of all Homework Robot is 100% free to use!
+          <span className={styles.heading}>
+            <span className={styles.purple}>Automaticaly</span>  get <span className={styles.blue}>instant answers </span>
+            to homework <span className={styles.pink}>questions</span> or <span className={styles.orange}>writing prompts</span></span>
+          <span className={styles.paragraph}>Homework Robot is the Ai driven study tool that delivers you high quality answers, notes and reports. Best of all Homework Robot is 100% free to use!
           </span>
           <div className={styles.buttonContainer}>
             <Link href='/Generator' passHref><Button style={{ minWidth: '12em', minHeight: '4em' }} variant="contained">Get Started</Button></Link>
-            <Link href='/About' passHref><Button className={styles.button} style={{ minWidth: '12em', minHeight: '4em' }} variant="outlined">Learn More</Button></Link>
-
           </div>
 
         </div>
