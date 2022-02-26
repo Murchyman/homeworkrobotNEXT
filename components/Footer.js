@@ -23,7 +23,7 @@ const Footer = () => {
 
                     <div className={styles.linkItem}> <a href='https://github.com/Murchyman' target="_blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={["fab", "github"]} /></a></div>
                     <div className={styles.linkItem}><a href='https://www.linkedin.com/in/mitchell-benjamin-b9b9b11a2/' target="_blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={["fab", "linkedin"]} /></a></div>
-                    <div className={styles.linkItem}> <Link href='/Contact' target="_blank" rel="noopener noreferrer" ><a><FontAwesomeIcon icon="envelope" /></a></Link></div>
+                    <div className={styles.linkItem}> <Link href='/contact' target="_blank" rel="noopener noreferrer" ><a><FontAwesomeIcon icon="envelope" /></a></Link></div>
 
 
 
