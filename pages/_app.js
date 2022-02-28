@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps }) {
 
       <Head>
         <title>HomeWork Robot</title>
-        <meta name="description" content="With HomeWork Robot, get instant answers to questions or writing prompts" />
+        <meta name="description" content="Automaticaly get instant answers to homework questions or writing prompts" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
 
       </Head>
