@@ -32,12 +32,3 @@ yarn-error.log*
 
 # vercel
 .vercel
-
-
-/public/sw.js.map
-
-/public/workbox-f8f28168.js
-
-/public/workbox-f8f28168.js.map
-public/sw.js
-public/sw.js

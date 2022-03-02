@@ -15,7 +15,7 @@ config.autoAddCss = false
 function MyApp({ Component, pageProps }) {
   return (
     <>
-{/* 
+
       <Script id="Adsense-id" data-ad-client="ca-pub-6052671390695750"
         async strategy="afterInteractive"
         onError={(e) => { console.error('Script failed to load', e) }}
@@ -36,11 +36,11 @@ function MyApp({ Component, pageProps }) {
             gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
           `
         }
-      </Script> */}
+      </Script>
 
       <Head>
         <title>HomeWork Robot</title>
-        <meta name="description" content="Automaticaly get instant answers to homework questions or writing prompts" />
+        <meta name="description" content="With HomeWork Robot, get instant answers to questions or writing prompts" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
 
       </Head>
